@@ -334,6 +334,27 @@
       text-decoration: underline;
     }
 
+    .contact-method {
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+  .contact-method-primary {
+      background: radial-gradient(circle at top, rgba(255, 215, 0, 0.18), rgba(0, 0, 0, 0.7));
+      border: 1px solid rgba(255, 215, 0, 0.6);
+    }
+
+  .contact-number {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gold);
+  }
+
+  .contact-number:hover {
+    color: #ffffff;
+  }
+
     /* Extra CSS for Stars & Shine */
     .gold-stars {
         color: #FFD700;
@@ -911,42 +932,16 @@
   </div>
 </section>
 
-<!-- Extra styling for contact methods -->
-<style>
-  .contact-method {
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(0, 0, 0, 0.35);
-  }
-
-  .contact-method-primary {
-    background: radial-gradient(circle at top, rgba(255, 215, 0, 0.18), rgba(0, 0, 0, 0.7));
-    border: 1px solid rgba(255, 215, 0, 0.6);
-  }
-
-  .contact-number {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--gold);
-  }
-
-  .contact-number:hover {
-    color: #ffffff;
-  }
-</style>
-
-
-
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
       <div>
         © <span id="year"></span> Silan Magician / Bloodline of Magic Entertainment. All rights reserved.
       </div>
-      <div class="d-flex gap-3">
+      <!--<div class="d-flex gap-3">
         <a href="#" class="footer-link">Privacy Policy</a>
         <a href="#" class="footer-link">Terms</a>
-      </div>
+      </div>-->
     </div>
   </footer>
 
