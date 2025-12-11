@@ -30,6 +30,23 @@
 
     gtag('config', 'AW-17776253401');
   </script>
+  <!-- Event snippet for Contact conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17776253401/E-CaCN3Yw88bENmzsJxC',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
 
   <style>
     :root {
@@ -436,6 +453,7 @@
               class="btn btn-sm btn-gold"
               href="https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event."
               target="_blank"
+              onclick="return gtag_report_conversion('https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event.');"
               rel="noopener"
             >
               WhatsApp Booking
@@ -468,6 +486,7 @@
             <a
               href="https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event."
               target="_blank"
+              onclick="return gtag_report_conversion('https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event.');"
               rel="noopener"
               class="btn btn-gold btn-lg px-4"
             >
@@ -688,6 +707,7 @@
         <a
           href="https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20enquire%20about%20a%20magic%20show%20for%20my%20event."
           target="_blank"
+          onclick="return gtag_report_conversion('https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event.');"
           rel="noopener"
           class="btn btn-gold px-4"
         >
@@ -851,6 +871,7 @@
               <a
                 href="https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event."
                 target="_blank"
+                onclick="return gtag_report_conversion('https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event.');"
                 rel="noopener"
                 class="btn btn-gold px-4"
               >
@@ -908,6 +929,7 @@
             <a
               href="https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event."
               target="_blank"
+              onclick="return gtag_report_conversion('https://wa.me/60163600843?text=Hi%20Silan%2C%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20event.');"
               rel="noopener"
               class="btn btn-gold px-4"
             >
